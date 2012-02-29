@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,6 +27,8 @@
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+    #bookmarklet { background-color: #48c088; color: #000000; }
+
   </style>
 </head>
 
@@ -47,26 +48,29 @@
       <span class="small">by <a href="https://github.com/petercamfield">petercamfield</a></span></h1>
 
     <div class="description">
-      Bookmarklet for Google Cloud Print<br />
+      Bookmarklet for Google Cloud Print. Allows you to print from any web connected device including iPhone/iPad
+      <h2>Instructions</h2>
+      <h3>On a Windows / OS X machine</h3> 
+      <ol>
+        <li>Start Google Chrome</li>
+        <li>Click on Spanner</li>
+        <li>Preferences</li>
+        <li>Under the Hood</li>
+        <li>Google Cloud Print</li>
+        <li>Enable</li>
+      </ol>
+      It's best to set up a printer and print a test page to ensure your setup is working.
+      See <a href="http://www.google.com/cloudprint/learn/">Google</a> for more info on Cloud Printing</p>
       
-      Instructions<br />
-      <br />
-      On a Windows / OS X machine<br /> 
-      <br />
-      Google Chrome > Click on Spanner > Preferences > Under the Hood > Google Cloud Print > Enable<br />
-      <br />
-      On a device you wish to print from<br />
-      <br />
-      Add the following as a bookmark [to the bookmarks bar for easy access]:
-      <a href="javascript:(function(){var script=document.createElement('SCRIPT');script.src='http://petercamfield.github.com/gcpbookmarklet/gcpbookmarklet.js';script.type='text/javascript';document.body.appendChild(script);})()">Add Print Button</a><br />
-      <br />
-      Tap on the bookmark on any page you wish to print. Scroll to the bottom and tap on the print button!<br />
-      <br />
-      If you are using an iPad/iPhone adding bookmarks is not very easy. You'll need to follow the instructions below. The good news; it's a one time set up.<br />
-      Alternatively you can use the synching features of iCloud to sync your bookmarks from your Mac.<br />
-      <br />
+      <h3>On a device you wish to print from</h3>
+      <p>Add the following as a bookmark [to the bookmarks bar for easy access]:<br />
+      <a href="javascript:(function(){var script=document.createElement('SCRIPT');script.src='http://petercamfield.github.com/gcpbookmarklet/gcpbookmarklet.js';script.type='text/javascript';document.body.appendChild(script);})()">Add Print Button</a>
+      </p>
+      <p>Tap on the bookmark on any page you wish to print. Scroll to the bottom and tap on the print button!</p>
+      <p>If you are using an iPad/iPhone adding bookmarks is not very easy. You'll need to follow the instructions below. The good news; it's a one time set up.<br />
+      Alternatively you can use the synching features of iCloud to sync your bookmarks from your Mac.</p>
       <ol>        
-        <li>Tap the action arrow on the toolbar in Safari. It's next to the address entry box at the top of the page</li>
+        <li>Tap the action arrow on the toolbar in Safari. It's next to the address entry box</li>
         <li>Tap Add Bookmark</li>
         <li>Edit the title - I suggest something along the lines of 'Add Print Button'</li>
         <li>Tap Save</li>
@@ -77,22 +81,17 @@
       </ol>
       
       Javascript to copy:
-      <pre>javascript:(function(){var script=document.createElement('SCRIPT');script.src='http://petercamfield.github.com/gcpbookmarklet/gcpbookmarklet.js';script.type='text/javascript';document.body.appendChild(script);})()</pre>
+      <pre id="bookmarklet">javascript:(function(){var script=document.createElement('SCRIPT');script.src='http://petercamfield.github.com/gcpbookmarklet/gcpbookmarklet.js';script.type='text/javascript';document.body.appendChild(script);})()</pre>
       <br />
       Enjoy!
     </div>
     
       <h2>Authors</h2>
-      <p>Peter Camfield (petercamfield@gmail.com)
-<br/>      </p>
-    
-
-    
+      <p>Peter Camfield</p>
+        
       <h2>Contact</h2>
-      <p>Peter Camfield (petercamfield@gmail.com)
-<br/>      </p>
+      <p>@petercamfield on twitter</p>
     
-
     <h2>Download</h2>
     <p>
       You can download this project in either
